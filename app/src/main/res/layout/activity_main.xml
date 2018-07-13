@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chatbot_pic"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/user_input"
+        android:layout_width="343dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:hint="@string/hintfortype"
+        android:inputType="textShortMessage" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick"
+        android:textSize="13sp"
+        android:background="@drawable/button_pic"/>
+
+    <ScrollView
+        android:id="@+id/scrolldown"
+        android:layout_width="match_parent"
+        android:layout_height="477dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/conversation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="16sp" />
+    </ScrollView>
+
+
+</RelativeLayout>
